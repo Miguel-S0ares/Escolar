@@ -1,0 +1,52 @@
+body{
+    padding: 0px 25px;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+      align-items: center;            /* Alinha os itens verticalmente */
+  padding: 0px 5px;
+  
+   
+}
+.menu a{
+    margin: 0px 15px;
+    text-decoration: none;
+   list-style-type: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.menu a:hover{
+    color: green;
+}
+.logo, .dummy-space {
+  width: 150px;                   /* Ajuste esta largura baseada no tamanho da sua logo */
+}
+.mini{
+    padding: 0px 15px;
+    background-color: #D3D3D3;
+    color: green;
+    border-radius: 5px;
+    max-width: 170px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 220px;
+    font-size: 30px;
+}
+.green{
+      margin-top: -30px;
+    color: green;
+}
+.explicacao{
+    max-width: 300px;
+    font-size: 15px;
+    
+}
