@@ -50,3 +50,36 @@ h3{
     font-size: 15px;
     
 }
+.meu-botao {
+    /* 1. Cores e Fundo */
+    background-color: #008751; /* Verde parecido com o da imagem anterior */
+    color: #ffffff;            /* Cor do texto branca */
+
+    /* 2. Tipografia */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    /* 3. Espaçamento Interno e Bordas */
+    padding: 12px 24px;        /* Espaço interno (vertical / horizontal) */
+    border: none;              /* Remove a borda padrão feia do navegador */
+    border-radius: 8px;        /* Deixa os cantos arredondados */
+
+    /* 4. Comportamento e Cursor */
+    cursor: pointer;           /* Mostra a "mãozinha" ao passar o mouse */
+    transition: background 0.3s ease; /* Suaviza a troca de cor no hover */
+}
+
+/* Efeito ao passar o mouse */
+.meu-botao:hover {
+    background-color: #00663d; /* Um tom de verde mais escuro */
+}
+
+/* Efeito ao clicar */
+.meu-botao:active {
+    transform: scale(0.98);    /* Dá um leve efeito de clique/pressão */
+}
+.button{
+   display: flex;
+    align-items: center;
+}
