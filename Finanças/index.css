@@ -14,7 +14,9 @@ header img{
 
 }
 .menu a{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px 15px;
+    font-size: 19px;
     text-decoration: none;
    list-style-type: none;
     color: black;
@@ -38,7 +40,7 @@ ul{
 h3{
     margin-top: -10px;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 280px;
+    max-width: 300px;
     font-size: 40px;
     font-weight: 700;
 }
@@ -162,20 +164,11 @@ h3{
 }
 
 .grafico{
-
     flex:2;
-
-    height:220px;
-
     background:#F8FAFC;
-
     border-radius:15px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    padding:20px;
+    height:260px;
 }
 
 .categorias{
@@ -187,4 +180,33 @@ h3{
     border-radius:15px;
 
     padding:20px;
+}
+.cash{
+    color: limegreen;
+}
+.deficet{
+    color: red;
+}
+.title{
+    margin: 50px auto;
+   max-width: 450px;
+   text-align: center;
+    
+}
+.info{
+    display:flex;
+    justify-content:space-around;
+    gap:30px;
+}
+
+.card-info{
+    text-align:center;
+}
+
+.card-info img{
+    width:70px;
+    margin-bottom:20px;
+}
+.card-info h3{
+    font-size:25px ;
 }

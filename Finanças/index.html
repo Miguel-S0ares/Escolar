@@ -64,20 +64,20 @@
 
     <div class="card">
         <h4>Receitas</h4>
-        <h2>R$ 12.300</h2>
+        <h2 class="cash">R$ 12.300</h2>
     </div>
 
     <div class="card">
         <h4>Despesas</h4>
-        <h2>R$ 3.850</h2>
+        <h2 class="deficet">R$ 3.850</h2>
     </div>
 
 </div>
 <div class="graficos">
 
-    <div class="grafico">
-        Gráfico
-    </div>
+ <div class="grafico">
+    <canvas id="graficoSaldo"></canvas>
+</div>
 
     <div class="categorias">
 
@@ -95,5 +95,37 @@
 </div>
 
 </section>
+
+<h3 class="title">Tudo que você precisa em um só lugar</h3>
+<div class="info">
+
+    <div class="card-info">
+        <img src="./img/credit-card-solid-full.svg" alt="">
+        <h3>Controle de gastos</h3>
+        <p>Veja para onde seu dinheiro está indo.</p>
+    </div>
+
+    <div class="card-info">
+        <img src="./img/bullseye-solid-full.svg" alt="">
+        <h3>Metas financeiras</h3>
+        <p>Defina objetivos.</p>
+    </div>
+
+    <div class="card-info">
+        <img src="./img/chart-line-solid-full.svg" alt="">
+        <h3>Relatórios claros</h3>
+        <p>Visualize seus resultados.</p>
+    </div>
+
+    <div class="card-info">
+        <img src="./img/lock-solid-full.svg" alt="">
+        <h3>Dados seguros</h3>
+        <p>Proteção das informações.</p>
+    </div>
+
+</div>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
