@@ -37,7 +37,8 @@ ul{
     border-radius: 5px;
     max-width: 170px;
 }
-h3{
+
+.texto h3{
     margin-top: -10px;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 300px;
@@ -189,24 +190,59 @@ h3{
 }
 .title{
     margin: 50px auto;
-   max-width: 450px;
+   max-width: 350px;
    text-align: center;
+   font-size: 35px;
+   margin-top: 50px;
     
 }
 .info{
     display:flex;
-    justify-content:space-around;
-    gap:30px;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:80px;
+}
+
+.card-info:not(:last-child){
+    border-right:1px solid #ECECEC;
+}
+
+.icone{
+    width:64px;
+    height:64px;
+
+    background:#EEF9F1;
+
+    border-radius:18px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icone img{
+    width:32px;
+    height:32px;
+}
+
+.card-info h3{
+    margin:0 0 15px;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card-info p{
+    max-width:220px;
+    margin:0 auto;
+    color:#6B7280;
+    line-height:30px;
+    font-size:18px;
 }
 
 .card-info{
+    flex:1;
     text-align:center;
-}
-
-.card-info img{
-    width:70px;
-    margin-bottom:20px;
-}
-.card-info h3{
-    font-size:25px ;
+    padding:20px 40px;
 }
