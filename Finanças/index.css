@@ -7,19 +7,21 @@ body{
     box-sizing: border-box;
 }
 header img{
-    width:120px;
-    height:auto;
+    width:150%   ;
+   
 }   
 /* NAVBAR - O flex vai para o container */
 .navbar{
     width: 100%;
     border-bottom:1px solid #ECECEC;
 }
+/* NAVBAR - Ajustado para diminuir a altura do menu */
 .navbar .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;            /* Alinha os itens verticalmente */
-    padding:20px 0 20px;
+    align-items: center;            
+    padding: 0px 0 0px; /* ⬅️ Reduzido em cima e ZERADO embaixo */
+    margin-top: -10px; /* ⬅️ Reduzido para 0px */
 }
 .menu a{
     font-family: Arial, Helvetica, sans-serif;
@@ -58,6 +60,7 @@ ul{
 .menu a:hover{
     color: green;
 }
+
 .logo, .dummy-space {
   width: 150px;                   /* Ajuste esta largura baseada no tamanho da sua logo */
 }
@@ -140,27 +143,25 @@ h3 span{
     justify-content:space-between;
     align-items:center;
     gap:80px;
-    
+    margin-top: -50px;
     margin-left: 10px;
-    
+    margin-bottom: 50px;
 }
 
 .texto{
     width:45%;
 }
 
-.painel{
-    margin-top: 20px;
-    width:55%;
-    min-height:500px;
-    background:#fff;
-    border-radius:20px;
-    box-shadow:0 10px 35px rgba(0,0,0,.15);
-
-    display:flex;
-    flex-direction:column;
-
-    padding:30px;
+.painel {
+    margin-top: 00px;    /* ⬅️ Mudado de 20px para 0px para tirar o espaço */
+    width: 55%;
+    min-height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
     box-sizing: border-box;
 }
 .topo{
@@ -332,13 +333,144 @@ h3 span{
     background:#00663d;
 }
 
-/* FOOTER */
+/* ===========================
+    FOOTER REESTRUTURADO (CORRIGIDO)
+=========================== */
 footer.footer {
-    background-color: #f8f9fa; /* Cor de fundo do rodapé */
-    padding: 20px 0;            /* Espaçamento interno */
-    text-align: center;         /* Centraliza o texto */
-    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
-    color: #6c757d;             /* Cor do texto */
-    margin-top: 50px;           /* Espaço acima do rodapé */
+    background-color: #ffffff;
+    border-top: 1px solid #ECECEC;
+    padding: 60px 0 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
+
+footer.footer .container.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Grade de colunas superior */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Coluna institucional da Logo */
+.footer-col-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    min-width: 250px;
+    margin: 0; /* Garante que nenhuma margem externa desalinho o bloco */
+    padding: 0;
+}
+
+.footer-logo {
+    margin-top: -70px; /* Ajuste fino para alinhar com o topo do título */
+    margin-left: -20px; /* Ajuste fino para alinhar com o topo do título */
+    width: 180px;
+    height: auto;
+    display: block;
+    margin-bottom: 8px; /* Espaço controlado até a tagline */
+}
+
+.footer-tagline {
+
+    font-size: 12px;
+    color: #64748B;
+    margin: -50px 0 12px 0; /* Remove margem superior e fixa a inferior */
+    font-weight: bold;
+}
+
+.footer-desc {
+    font-size: 14px;
+    color: #6B7280;
+    line-height: 22px;
+    max-width: 240px;
+    margin: 0;
+}
+
+/* Colunas padrão de links */
+.footer-col {
+    min-width: 140px;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    color: #000000;
+    margin: 0 0 20px 0; /* Alinha a altura do título com o topo da logo */
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #6B7280;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #008751;
+}
+
+/* Linha divisória fina */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #F1F5F9;
+    margin: 0 0 25px 0;
+    width: 100%;
+}
+
+/* Seção de Copyright e Links Legais */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.footer-bottom .copyright {
+    font-size: 13px;
+    color: #94A3B8;
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal a {
+    text-decoration: none;
+    color: #94A3B8;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #64748B;
+}
+
